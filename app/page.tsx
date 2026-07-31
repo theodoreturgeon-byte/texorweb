@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ContactForm from "./components/ContactForm";
 
 const services = [
   {
@@ -72,7 +73,6 @@ export default function Home() {
               className="h-auto w-44 sm:w-52"
             />
           </a>
-
           <nav
             aria-label="Navigation principale"
             className="hidden items-center gap-8 md:flex"
@@ -90,14 +90,12 @@ export default function Home() {
               Contact
             </a>
           </nav>
-
           <a
             href="#contact"
             className="hidden rounded-full bg-blue-600 px-5 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-blue-700 md:inline-flex"
           >
             Demander une soumission
           </a>
-
           <a
             href="#contact"
             className="rounded-full bg-blue-600 px-4 py-2.5 text-sm font-semibold text-white md:hidden"
@@ -116,25 +114,21 @@ export default function Home() {
           <div className="absolute right-[-8rem] top-20 h-[30rem] w-[30rem] rounded-full bg-cyan-100/70 blur-3xl" />
           <div className="hero-grid absolute inset-0 opacity-40" />
         </div>
-
         <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 py-20 sm:px-8 lg:grid-cols-[1.05fr_0.95fr]">
           <div>
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-700">
               <span className="h-2 w-2 rounded-full bg-blue-600" />
               Création de sites web au Québec
             </div>
-
             <h1 className="max-w-4xl text-5xl font-black tracking-[-0.055em] text-slate-950 sm:text-6xl lg:text-7xl">
               Votre entreprise mérite un site web{" "}
               <span className="text-blue-600">à sa hauteur.</span>
             </h1>
-
             <p className="mt-7 max-w-2xl text-lg leading-8 text-slate-600 sm:text-xl">
               TexorWeb conçoit des sites modernes, rapides et adaptés aux
               petites entreprises qui souhaitent améliorer leur présence en
               ligne et générer davantage de demandes.
             </p>
-
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
               <a
                 href="#contact"
@@ -145,7 +139,6 @@ export default function Home() {
                   →
                 </span>
               </a>
-
               <a
                 href="#services"
                 className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-7 py-4 font-bold text-slate-900 transition hover:-translate-y-1 hover:border-blue-300 hover:text-blue-700"
@@ -153,7 +146,6 @@ export default function Home() {
                 Découvrir nos services
               </a>
             </div>
-
             <div className="mt-11 grid max-w-2xl grid-cols-2 gap-5 sm:grid-cols-3">
               <div>
                 <p className="text-2xl font-black text-slate-950">100 %</p>
@@ -173,10 +165,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-
           <div className="relative">
             <div className="absolute -inset-8 -z-10 rounded-full bg-blue-200/50 blur-3xl" />
-
             <div className="overflow-hidden rounded-[2rem] border border-slate-200 bg-slate-950 p-3 shadow-2xl shadow-slate-950/20">
               <div className="rounded-[1.4rem] bg-white p-6 sm:p-8">
                 <div className="mb-8 flex items-center justify-between">
@@ -187,7 +177,6 @@ export default function Home() {
                   </div>
                   <div className="h-3 w-24 rounded-full bg-slate-100" />
                 </div>
-
                 <Image
                   src="/texorweb-logo.png"
                   alt="Logo TexorWeb"
@@ -196,18 +185,15 @@ export default function Home() {
                   priority
                   className="mx-auto h-auto w-full"
                 />
-
                 <div className="mt-8 grid grid-cols-3 gap-3">
                   <div className="h-24 rounded-2xl bg-slate-100" />
                   <div className="h-24 rounded-2xl bg-blue-600" />
                   <div className="h-24 rounded-2xl bg-slate-100" />
                 </div>
-
                 <div className="mt-4 h-4 w-2/3 rounded-full bg-slate-100" />
                 <div className="mt-3 h-4 w-1/2 rounded-full bg-slate-100" />
               </div>
             </div>
-
             <div className="absolute -bottom-7 -left-4 rounded-2xl border border-slate-200 bg-white p-4 shadow-xl sm:-left-10">
               <p className="text-sm font-semibold text-slate-500">
                 Site professionnel
@@ -253,7 +239,6 @@ export default function Home() {
               ligne avec une approche simple, claire et personnalisée.
             </p>
           </div>
-
           <div className="mt-14 grid gap-5 md:grid-cols-2">
             {services.map((service) => (
               <article
@@ -292,7 +277,6 @@ export default function Home() {
               et vous permettre de suivre facilement son avancement.
             </p>
           </div>
-
           <div className="space-y-4">
             {[
               [
@@ -346,7 +330,6 @@ export default function Home() {
               remplacés par de véritables réalisations.
             </p>
           </div>
-
           <div className="mt-14 grid gap-6 lg:grid-cols-3">
             {projects.map((project, index) => (
               <article
@@ -365,7 +348,6 @@ export default function Home() {
                     </p>
                   </div>
                 </div>
-
                 <div className="p-7">
                   <p className="text-xs font-bold uppercase tracking-[0.18em] text-blue-400">
                     {project.category}
@@ -391,7 +373,6 @@ export default function Home() {
               height={320}
               className="h-auto w-full rounded-2xl bg-white p-5"
             />
-
             <div className="mt-8 border-t border-white/20 pt-8">
               <p className="text-sm font-semibold uppercase tracking-[0.18em] text-blue-100">
                 Notre mission
@@ -401,13 +382,11 @@ export default function Home() {
               </p>
             </div>
           </div>
-
           <div>
             <p className="section-label">À propos</p>
             <h2 className="section-title">
               Une jeune entreprise québécoise tournée vers le numérique.
             </h2>
-
             <div className="mt-7 space-y-5 text-lg leading-8 text-slate-600">
               <p>
                 TexorWeb aide les petites entreprises, commerces locaux et
@@ -425,7 +404,6 @@ export default function Home() {
                 tous les appareils et faciliter le passage à l’action.
               </p>
             </div>
-
             <a
               href="#contact"
               className="mt-8 inline-flex items-center font-bold text-blue-600 hover:text-blue-800"
@@ -446,7 +424,6 @@ export default function Home() {
                 Une collaboration claire et un résultat professionnel.
               </h2>
             </div>
-
             <div className="grid gap-4 sm:grid-cols-2">
               {benefits.map((benefit) => (
                 <div
@@ -473,12 +450,10 @@ export default function Home() {
                 <h2 className="text-4xl font-black tracking-[-0.04em] sm:text-5xl">
                   Prêt à améliorer votre présence en ligne?
                 </h2>
-
                 <p className="mt-6 max-w-lg text-lg leading-8 text-slate-400">
                   Présentez-nous votre entreprise et votre projet. Nous vous
                   répondrons avec une solution adaptée à vos besoins.
                 </p>
-
                 <div className="mt-10 space-y-5">
                   <div>
                     <p className="text-sm font-semibold text-slate-500">
@@ -491,7 +466,6 @@ export default function Home() {
                       contact@texorweb.com
                     </a>
                   </div>
-
                   <div>
                     <p className="text-sm font-semibold text-slate-500">
                       Zone de service
@@ -501,79 +475,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <form
-                action="mailto:contact@texorweb.com"
-                method="post"
-                encType="text/plain"
-                className="bg-white p-8 sm:p-12 lg:p-14"
-              >
-                <div className="grid gap-6 sm:grid-cols-2">
-                  <label className="form-field">
-                    <span>Nom</span>
-                    <input
-                      type="text"
-                      name="nom"
-                      placeholder="Votre nom"
-                      required
-                    />
-                  </label>
-
-                  <label className="form-field">
-                    <span>Entreprise</span>
-                    <input
-                      type="text"
-                      name="entreprise"
-                      placeholder="Nom de l’entreprise"
-                    />
-                  </label>
-                </div>
-
-                <label className="form-field mt-6">
-                  <span>Adresse courriel</span>
-                  <input
-                    type="email"
-                    name="courriel"
-                    placeholder="vous@entreprise.com"
-                    required
-                  />
-                </label>
-
-                <label className="form-field mt-6">
-                  <span>Type de projet</span>
-                  <select name="type-projet" defaultValue="">
-                    <option value="" disabled>
-                      Sélectionnez une option
-                    </option>
-                    <option>Nouveau site web</option>
-                    <option>Refonte d’un site</option>
-                    <option>Maintenance ou modifications</option>
-                    <option>Autre</option>
-                  </select>
-                </label>
-
-                <label className="form-field mt-6">
-                  <span>Parlez-nous de votre projet</span>
-                  <textarea
-                    name="message"
-                    rows={5}
-                    placeholder="Décrivez brièvement votre entreprise, vos besoins et vos objectifs."
-                    required
-                  />
-                </label>
-
-                <button
-                  type="submit"
-                  className="mt-7 w-full rounded-full bg-blue-600 px-7 py-4 font-bold text-white transition hover:-translate-y-1 hover:bg-blue-700"
-                >
-                  Envoyer ma demande
-                </button>
-
-                <p className="mt-4 text-center text-xs leading-5 text-slate-500">
-                  Ce formulaire ouvre actuellement votre application de
-                  messagerie. Il pourra ensuite être connecté à un système
-                  d’envoi automatique.
-                </p>
-              </form>
+              <ContactForm />
             </div>
           </div>
         </div>
@@ -588,7 +490,6 @@ export default function Home() {
             height={100}
             className="h-auto w-40"
           />
-
           <div className="flex flex-wrap gap-x-6 gap-y-3 text-sm font-semibold text-slate-600">
             <a href="#services" className="hover:text-blue-600">
               Services
@@ -603,7 +504,6 @@ export default function Home() {
               Contact
             </a>
           </div>
-
           <p className="text-sm text-slate-500">
             © {new Date().getFullYear()} TexorWeb. Tous droits réservés.
           </p>
